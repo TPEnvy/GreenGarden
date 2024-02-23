@@ -1,0 +1,61 @@
+/*# sourceMappingURL=monitor.css.map */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 5rem;
+  height: 120vh;
+}
+
+.progress-bar {
+  width: 200px; /* Adjust width to make it smaller */
+  height: 200px; /* Adjust height to make it smaller */
+  border-radius: 50%; /* Make it circular */
+  background: conic-gradient(red 0deg); /* Default background color */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the progress label */
+  transition: background-color 0.5s ease;
+}
+.card .row {
+  margin-bottom: 5px; /* Adjust spacing between rows */
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.progress-label {
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #000;
+}
+
+/* Different colors for different progress ranges */
+.progress-bar.red {
+  background-color: red;
+}
+
+.progress-bar.orange {
+  background-color: orange;
+}
+
+.progress-bar.yellow {
+  background-color: yellow;
+}
+
+.progress-bar.green {
+  background-color: green;
+}
