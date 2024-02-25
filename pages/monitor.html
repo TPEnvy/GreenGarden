@@ -17,20 +17,26 @@
 
     <main class="pt-5 px-5">
       <div class="card pt-5 px-5 mt-5">
-        <h1 class="pt-5 text-primary">Dashboard</h1>
+        <div class="d-flex justify-content-between">
+          <h1 class="pt-5 text-primary">Dashboard</h1>
+          <button
+            type="button"
+            class="btn bg-primary text-white d-flex align-items-center py-2 pe-4 mt-5"
+            style="width: 197px; height: 55px"
+          >
+            <i class="ps-2 bi bi-arrow-90deg-right me-1"></i>
+            Initial Manual Watering
+          </button>
+        </div>
         <h4 class="pt-3">Real Time Monitoring</h4>
         <h5 class="pt-3 mb-5">Plantbox 1</h5>
         <div class="row" id="soilContainer"></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
-          consequatur. Quaerat consequatur reiciendis quisquam vero. Ea
-          provident mollitia labore atque facere ducimus error temporibus nam
-          quasi asperiores, nulla velit aliquid!
-        </p>
       </div>
     </main>
     <script src="/pages/js/monitor.js"></script>
     <script src="/composables/header.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
   </body>
 </html>

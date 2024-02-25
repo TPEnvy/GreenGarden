@@ -12,19 +12,43 @@ document.addEventListener("DOMContentLoaded", function () {
     cardDiv.classList.add("col-md-3");
 
     const cardContent = `
-      <div class="card border-primary align-items-center bg-secondary pt-3 pb-5 px-5 mb-4">
-      <i class="bi bi-question-circle-fill align-items-right" style="font-size: 28px"></i>
-      <div class="sub-menu-wrap">
-        <div class="sub-menu"></div>
-      </div>
-        <h4 class="text-black py-3 align-items-center">${data.name}</h4>
-        <div class="align-items-center">
-        <div class="progress-bar" data-progress="${data.percentage}">
-          <span class="progress-label">${data.percentage}%</span>
+        <div class="card border-primary align-items-center bg-secondary pt-3 pb-5 px-5 mb-4">
+          <div class="dropdown ">
+            <i class="bi bi-question-circle-fill " style="font-size: 28px" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu dropdown-menu-left px-3 py-3" aria-labelledby="dropdownMenuButton">
+              <div class="legend-wrap">
+                <div class="legend">
+                  <div class="legend-item">
+                    <div class="legend-color red"></div>
+                    <div class="legend-label">Less than or <br>equal to 25%</div>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color orange"></div>
+                    <div class="legend-label">26% to 50%</div>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color yellow"></div>
+                    <div class="legend-label">51% to 75%</div>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color green"></div>
+                    <div class="legend-label">More than 75%</div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="sub-menu-wrap">
+            <div class="sub-menu"></div>
+          </div>
+          <h4 class="text-black py-3 align-items-center">${data.name}</h4>
+          <div class="align-items-center">
+            <div class="progress-bar" data-progress="${data.percentage}">
+              <span class="progress-label">${data.percentage}%</span>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-    `;
+      `;
 
     cardDiv.innerHTML = cardContent;
     soilContainer.appendChild(cardDiv);
@@ -70,17 +94,46 @@ document.addEventListener("DOMContentLoaded", function () {
   combinedCardDiv.classList.add("col-md-3");
 
   const combinedCardContent = `
-    <div class="card border-primary align-items-center bg-secondary py-5 px-5 mb-4">
-      <h4 class="text-black py-3">Temperature</h4>
-      <div class="progress-bar temperature" data-progress="28"> <!-- Adjust the initial temperature value here -->
-        <span class="progress-label">28°C</span>
+      <div class="card border-primary align-items-center bg-secondary py-5 px-5 mb-4">
+        <div class="dropdown">
+          <i class="bi bi-question-circle-fill " style="font-size: 28px" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+          <ul class="dropdown-menu  px-3 py-3" aria-labelledby="dropdownMenuButton">
+            <div class="legend-wrap">
+              <div class="legend">
+                <div class="legend-item">
+                  <div class="legend-color red"></div>
+                  <div class="legend-label">Less than or equal <br> to 18°C or <br>more than 35°C</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color orange"></div>
+                  <div class="legend-label">19°C to 22°C<br> or 33°C to 34°C</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color yellow"></div>
+                  <div class="legend-label">23°C to 25°C <br> or 30°C to 32°C</div>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color green"></div>
+                  <div class="legend-label">26°C to 29°C</div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <h4 class="text-black py-3">Temperature</h4>
+        <div class="align-items-center">
+          <div class="progress-bar temperature" data-progress="28">
+            <span class="progress-label">28°C</span>
+          </div>
+        </div>
+        <h4 class="text-black py-4">Humidity </h4>
+        <div class="align-items-center">
+          <div class="progress-bar humidity" data-progress="55">
+            <span class="progress-label">60%</span>
+          </div>
+        </div>
       </div>
-      <h4 class="text-black py-4">Humidity </h4>
-      <div class="progress-bar humidity" data-progress="55">
-        <span class="progress-label">60%</span>
-      </div>
-    </div>
-  `;
+    `;
 
   combinedCardDiv.innerHTML = combinedCardContent;
   soilContainer.appendChild(combinedCardDiv);
