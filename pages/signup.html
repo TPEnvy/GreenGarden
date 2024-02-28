@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Garden</title>
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <style>
+      .aside-container {
+        background-image: url("/images/lettuce.png");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-primary">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <aside
+            class="d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <h1 class="text-secondary mb-5 fw-bold p-5">
+              Already a <span class="text-dark"> User?</span>
+            </h1>
+            <a href="/pages/login.html">
+              <button
+                class="btn border-secondary text-secondary rounded-pill"
+                style="width: 408px"
+              >
+                Sign In
+              </button>
+            </a>
+          </aside>
+        </div>
+        <div class="bg-dark col-md-8">
+          <main
+            class="text-secondary d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <div>
+              <h1
+                class="m-2 text-white fw-bold d-flex justify-content-center align-items-center"
+              >
+                Sign <span class="text-primary">&nbsp;Up</span>
+              </h1>
+              <form id="form1" class="no-border m-2">
+                <label class="label text-secondary m-1" for="First-name"
+                  >First Name: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 border-primary"
+                  type="text"
+                  id="First-name"
+                  name="First-name"
+                  placeholder="Enter your First Name"
+                  style="width: 456px"
+                />
+                <label class="label text-secondary m-1" for="Surname"
+                  >Surname: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 border-primary"
+                  type="text"
+                  id="Surname"
+                  name="Surname"
+                  placeholder="Enter your Surname"
+                  style="width: 456px"
+                />
+                <label class="label text-secondary m-1" for="Email"
+                  >Middle Name (Optional):
+                  <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 border-primary"
+                  type="text"
+                  id="Mname"
+                  name="Mname"
+                  placeholder="Enter your Middle Name"
+                  style="width: 456px"
+                />
+                <label class="label text-secondary m-1" for="Email"
+                  >Email: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 border-primary"
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  placeholder="Enter your Email"
+                  style="width: 456px"
+                />
+
+                <label class="label text-secondary m-1" for="Password"
+                  >Password: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 mb-5 border-primary"
+                  type="password"
+                  id="Password"
+                  name="Password"
+                  placeholder="Enter your Password"
+                  style="width: 456px"
+                />
+                <div class="d-flex justify-content-center">
+                  <input
+                    type="submit"
+                    class="btn btn-primary text-secondary rounded-pill align-items-center"
+                    value="Submit"
+                    style="width: 405px"
+                  />
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

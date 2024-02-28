@@ -23,7 +23,9 @@ main {
 .card .row {
   margin-bottom: 5px; /* Adjust spacing between rows */
 }
-
+.drop-circle:hover {
+  color: #249990 !important;
+}
 .progress-bar::before {
   content: "";
   position: absolute;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Garden</title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <main
+            class="d-flex justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <div>
+              <h1
+                class="m-2 text-white fw-bold d-flex justify-content-center align-items-center"
+              >
+                Log <span class="text-primary">&nbsp;In</span>
+              </h1>
+              <form id="form1" class="no-border m-2">
+                <label class="label text-secondary m-1" for="Email"
+                  >Email: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 border-primary"
+                  type="email"
+                  id="Email"
+                  name="Email"
+                  placeholder="Enter your Email"
+                  style="width: 456px"
+                />
+                <label class="label text-secondary m-1" for="Password"
+                  >Password: <span class="text-danger">*</span></label
+                >
+                <input
+                  class="form-control m-2 mb-5 border-primary"
+                  type="password"
+                  id="Password"
+                  name="Password"
+                  placeholder="Enter your Password"
+                  style="width: 456px"
+                />
+                <div class="d-flex justify-content-center">
+                  <input
+                    type="submit"
+                    class="btn btn-primary text-secondary rounded-pill align-items-center"
+                    value="Submit"
+                    style="width: 405px"
+                  />
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+        <div class="bg-primary col-md-4">
+          <aside
+            class="text-secondary d-flex flex-column justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <h1 class="text-secondary mb-2 fw-bold p-5">
+              New <span class="text-dark">Here?</span>
+            </h1>
+            <p class="fw-semibold p-4">
+              Sign up if you still don't have an account
+            </p>
+            <a href="/pages/signup.html">
+              <button
+                class="btn border-secondary text-secondary rounded-pill"
+                style="width: 408px"
+              >
+                Sign Up
+              </button>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

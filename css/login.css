@@ -1,19 +1,6 @@
 @charset "UTF-8";
-.navbar {
-  width: 5rem;
-  height: 120vh;
-}
-
-.navbar-nav {
-  list-style: none;
-}
-
-.nav-item a {
-  list-style: none;
-}
-
-.navbar-nav .nav-item a:hover {
-  color: #249990 !important; /* Change the color to your desired hover color */
+.form-control:focus {
+  outline: none; /* Remove the focus outline */
 }
 
 /*!
@@ -11871,4 +11858,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=login.css.map */
